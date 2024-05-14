@@ -5,7 +5,7 @@ pipeline {
             steps {
 		dir('helloworld-ws')
 		{ sh 'pwd' }
-                sh 'mvn package' 
+                sh 'mvn -f ./helloworld-ws/pom.xml package' 
             }
         }
     }
